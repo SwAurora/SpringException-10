@@ -25,8 +25,9 @@ public class MyHandlerExceptionResolver implements HandlerExceptionResolver
         }
         catch(IOException e)
         {
-            e.printStackTrace();
+            log.error("resolver ex", e);
         }
+
         return null;
     }
 }
